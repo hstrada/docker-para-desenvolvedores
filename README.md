@@ -18,4 +18,8 @@ Containers utilizam imagens para serem executados;
 As imagens contém as instruções, como o JDK, o PHP, .NET e o container é o docker rodando a imagem.
 hub.docker.com
 
+## Sessões
+
 [02-trabalhando-com-containers](02-containers.md)
+
+[03-imagens](03-images.md)

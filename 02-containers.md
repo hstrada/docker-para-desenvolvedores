@@ -46,8 +46,3 @@ Forçar a remoção, ainda que ele esteja sendo executado:
 
 Listar todos os containers:
 > docker ps -a && docker rm <id ou nome>
-
-## Criando imagens e avançando em containers
-
-Imagens são originadas de arquivos que programamos, é uma estrutura que determina ações que deverão ser realizadas.
-
