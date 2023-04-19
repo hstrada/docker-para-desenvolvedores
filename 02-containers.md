@@ -21,7 +21,7 @@ Executar em background (detached):
 Expor portas:
 > docker run -d -p 3000:80 nginx
 
-Expondo no pc:expondo no container (localhost:3000)
+Expondo no pc (a que irei acessar):expondo no container(a que redirecionará para o container) (localhost:3000)
 
 Parar container:
 > docker stop <id ou nome>
