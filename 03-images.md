@@ -102,7 +102,7 @@ Flag -f para forçar a remoção:
 
 ## Remover container automaticamente após a sua utilização
 
-> docker run -d -p 6000:3000 --name aplicacao_node1 --rm <id>
+> docker run -d -p 3000:3000 --name aplicacao_node1 --rm <id>
 
 > docker stop <container id>
 
@@ -111,4 +111,50 @@ Para visualizar as imagens criadas:
 
 ## Copiando arquivos entre containers
 
+> docker run -d -p 3000:3000 --name aplicacao_node1 9fd06ef324b5
 
+> docker cp 78e7656de44f:/app.js ./backup/
+
+## Informações de processamento do container
+
+> docker top <container>
+
+## Verificar dados de um container
+
+> docker inspect <container>
+
+## Verificar processamento do docker
+
+> docker stats
+
+# Enviar imagens para o dockerhub
+
+## Autenticando
+
+> docker login
+
+## Logout - encerrando a sessão
+
+> docker logout
+
+## Enviando imagem para o dockerhub
+
+Criar repositório no dockerhub: nomedousuario/nomedaimagem
+
+> docker build nomedousuario/nomedaimagem .
+
+> docker push nomedousuario/nomedaimagem
+
+## Enviando atualização da imagem
+
+Para gerar a nova versão:
+> docker build -t nomedousuario/nomedaimagem:novatag .
+
+Para enviar a nova versão:
+> docker push nomedousuario/nomedaimagem:novatag
+
+## Utilizando nossa imagem
+
+> docker pull nomedousuario/nomedaimagem:novatag
+
+> docker run --name testando_imagem -p 3000:3000 -d nomedousuario/nomedaimagem:novatag

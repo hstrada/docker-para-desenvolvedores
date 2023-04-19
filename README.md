@@ -23,3 +23,5 @@ hub.docker.com
 [02-trabalhando-com-containers](02-containers.md)
 
 [03-imagens](03-images.md)
+
+[04-volumes](04-volumes.md)
