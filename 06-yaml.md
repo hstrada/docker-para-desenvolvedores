@@ -65,4 +65,28 @@ nulo: ~
 nulo_null: null
 ```
 
+## Booleanos
 
+```yaml
+booleano: True/False
+boolean_on_off: On/Off
+```
+
+## Listas
+
+```yaml
+lista: [1, 2, 3]
+lista_opcao:
+    - 1
+    - 2
+    - 3
+```
+
+## Dicionários (objetos ou listas com chave/valor)
+
+```yaml
+objeto: {a: 1, b: 2}
+objeto_opcao:
+    a: 1
+    b: 2
+```
