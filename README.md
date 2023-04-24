@@ -27,3 +27,5 @@ hub.docker.com
 [04-volumes](04-volumes.md)
 
 [05-networks](05-networks.md)
+
+[06-yaml](06-yaml.md)
