@@ -26,6 +26,36 @@ Verificar volumes criados
 Apontamos um diretório
 > docker run /dir/data:/data
 
-O diretório do computador dir/data será o volume do container
+O diretório do computador informado (dir/data ou C:/) será o volume do container
 
+## Criar um volume
 
+> docker volume create <nome>
+
+Para listar os volumes
+> docker volume ls
+
+Associando ao container
+> docker run -d -p 80:80 --name <nomecontainer> -v <nomedovolume>:<diretorio>
+
+## Listando volumes
+
+> docker volume ls
+
+## Inspecionando um volume
+
+> docker volume inspect <nomedovolume>
+
+## Removendo volumes
+
+> docker volume rm <nomedovolume>
+
+## Removendo volumes em massa
+
+Remover volumes que não estão sendo utilizados
+> docker volume prune
+
+## Volume somente leitura
+
+ro = read only
+> docker run -v volume:/data:ro
