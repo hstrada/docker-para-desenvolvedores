@@ -31,3 +31,7 @@ hub.docker.com
 [06-yaml](06-yaml.md)
 
 [07-docker-compose](07-docker-compose.md)
+
+[08-docker-swarm](08-docker-swarm.md)
+
+[09-kubernetes](09-kubernetes.md)
