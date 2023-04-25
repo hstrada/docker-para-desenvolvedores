@@ -8,8 +8,6 @@ services:
     restart: always
     env_file:
       - ./config/db.env
-    networks:
-      - backend
     # environment:
     #   MYSQL_ROOT_PASSWORD: wordpress
     #   MYSQL_DATABASE: wordpress
@@ -25,8 +23,6 @@ services:
     restart: always
     env_file:
       - ./config/wp.env
-    networks:
-      - backend
     # environment:
     #   WORDPRESS_DB_HOST: 3306
     #   WORDPRESS_DB_USER: helena
@@ -35,7 +31,3 @@ services:
 
 volumes:
   db_data: {}
-
-networks:
-  backend:
-    driver: bridge
