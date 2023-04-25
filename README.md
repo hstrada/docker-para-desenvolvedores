@@ -29,3 +29,5 @@ hub.docker.com
 [05-networks](05-networks.md)
 
 [06-yaml](06-yaml.md)
+
+[07-docker-compose](07-docker-compose.md)
